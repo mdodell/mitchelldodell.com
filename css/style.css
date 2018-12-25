@@ -1,0 +1,519 @@
+body {
+    background-color: #E5E2D2;
+}
+
+/*Welcome Classes*/
+.mitchellImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2vh;
+}
+
+.navigation {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    visibility: hidden;
+}
+
+.navigation div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navigation h5 {
+    color: #E76350;
+    transition: color 0.25s linear;
+}
+
+.navigation h5:hover {
+    cursor: pointer;
+    color: #992615;
+}
+
+.socialIcons {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+/*.fa-linkedin {*/
+    /*opacity: 0;*/
+    /*animation: 2s linear 1s fadeIn forwards;*/
+/*}*/
+
+/*.fa-envelope {*/
+    /*opacity: 0;*/
+    /*animation: 2s linear 0s fadeIn forwards;*/
+/*}*/
+
+/*.fa-github {*/
+    /*opacity: 0;*/
+    /*animation: 2s linear 0.5s fadeIn forwards;*/
+/*}*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.socialIcons i {
+    transition: all 100ms linear;
+}
+
+.socialIcons i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.github-color {
+    color: #6e5494;
+}
+
+.linkedin-color {
+    color: #0077B5;
+}
+
+.primary-orange-color {
+    color: #E76350;
+}
+
+.hiMessage {
+    font-size: 60px;
+    color: #E76350;
+    width: 100%;
+    opacity: 0;
+    animation: 1s ease-in 0s fadeIn forwards;
+}
+
+.hiSubMessage {
+    font-size: 48px;
+    color: #E76350;
+    width: 100%;
+    opacity: 0;
+    animation: 1s ease-in 1s fadeIn forwards;
+}
+
+.welcomeImageWrapper {
+    font-family: 'Josefin Slab';
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+}
+
+
+.resumeDownloadContainer {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.resumeDownloadContainer a {
+    text-decoration: none;
+    font-family: 'Josefin Slab';
+    font-size: 30px;
+    background-color: transparent;
+    color: #E76350;
+    text-align: center;
+    padding: 5px 10px;
+    border: 2px solid #E76350;
+    transition: all 0.3s ease;
+}
+
+.resumeDownloadContainer a:hover {
+    background-color: #E76350;
+    color: white;
+    cursor: pointer;
+}
+
+/*About Me Classes*/
+.aboutMeRowWrapper {
+    margin-top: 2.5vh;
+    margin-bottom: 0!important;
+}
+
+.subSectionDivider {
+    height: 3px;
+    overflow: hidden;
+    background-color: #E76350;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.sectionHeaderTitle:before {
+    background: black;
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    left: 10%;
+}
+
+.sectionHeaderSubTitle {
+    font-family: 'Josefin Slab';
+    color: #E76360;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/*Portfolio Classes*/
+.portfolioItemContainer {
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 12px;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    font-family: 'Josefin Slab';
+    color: white;
+}
+
+.portfolioItemContainer h6 {
+    padding: 10px 7.5px;
+}
+
+.portfolioItemContainer .portfolioItemContent {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+.portfolioItemContainer:hover .portfolioItemContent {
+    opacity: 100;
+    z-index: 1!important;
+}
+
+.portfolioItemContainer img {
+    opacity: 100;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+    transition: opacity 0.5s linear;
+}
+
+.portfolioItemContainer:hover img {
+    opacity: 0;
+}
+
+.portfolioItemContent h5 {
+    padding: 0 10px;
+}
+
+.moreWorkComingSoon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #992615;
+}
+
+.moreWorkComingSoon h3 {
+    margin-top: 0;
+}
+
+.portfolioItemButton {
+    width: 50%;
+    border-radius: 20px;
+    border: #E76350 solid 2px;
+    color: #E76350;
+    height: 15%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    bottom: 30px;
+    padding-top: 10px;
+    transform: translate(-50%, 0%);
+    transition: all 0.5s linear;
+    z-index: -1!important;
+}
+
+.portfolioItemButton:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #E76350;
+}
+
+/*Testimonial Classes*/
+
+hr {
+    width: 70%;
+    border: grey solid 0.5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.testimonialImage {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    border: white solid 6px;
+    box-shadow: 0 7px 2px -2px gray;
+    margin-bottom: 30px;
+}
+
+.testimonialLeftImage {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+.testimonialRightImage {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    float: right!important;
+}
+
+.testimonialWrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.testimonialText {
+    width: 100%;
+    font-family: SansSerif;
+    margin-top: 0;
+}
+
+.testimonialName {
+    font-family: "Josefin Slab";
+    color: #E76350;
+}
+
+
+.testimonialContainer {
+    margin-bottom: 20px!important;
+}
+
+.testimonialRole {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+/*Component Classes*/
+.sectionHeaderSpan {
+    background: #E5E2D2;
+    padding: 0 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.sectionSubtitle {
+    font-family: 'Josefin Slab';
+    color: #E76360;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.sectionHeaderTitle {
+    font-family: 'Josefin Slab';
+    color: #E76350;
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.sectionWrapper {
+    padding-top: 2.5vh;
+    width: 100%;
+    background-color: #E5E2D2;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+
+@media (min-width: 320px){
+    .resumeDownloadContainer a {
+        font-size: 24px;
+    }
+
+    .resumeDownloadContainer {
+        margin-top: 2.5vh;
+    }
+
+    .mitchellImage {
+        height: 325px;
+        width: 275px;
+    }
+
+    .hiMessage {
+        font-size: 30px;
+    }
+
+    .hiSubMessage {
+        font-size: 20px;
+    }
+
+    .aboutMeParagraph {
+        font-family: SansSerif;
+        color: #E76350;
+    }
+
+    .aboutMeParagraphWrapper {
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    .resumeDownloadContainer {
+        display: none;
+    }
+
+    .aboutMeRowWrapper {
+        margin-top: 0!important;
+    }
+
+    .testimonialLeftImage {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .testimonialRightImage {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .testimonialImage {
+        float: left;
+    }
+
+    .socialIcons {
+        top: 5px;
+        right: 5px;
+        flex-direction: column;
+    }
+
+    .icon {
+        font-size: 2.5em!important;
+        padding: 5px!important;
+    }
+}
+
+/*!* smartphones, portrait iPhone, portrait 480x375 phones (Android) *!*/
+@media (min-width:375px)  {
+    .icon {
+        padding: 10px!important;
+    }
+}
+
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */
+
+}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+    .mitchellImage {
+        height: 500px;
+        width: 400px;
+    }
+
+    .icon {
+        font-size: 4em!important;
+    }
+
+    .sectionHeaderSubTitle {
+        font-size: 1.9rem;
+    }
+
+
+    .hiMessage {
+        font-size: 48px;
+    }
+
+    .hiSubMessage {
+        font-size: 32px;
+    }
+
+    .testimonialLeftImage {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .testimonialRightImage {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 700px) {
+    .socialIcons {
+        flex-direction: row;
+        top: 30px;
+        right: 30px;
+    }
+}
+
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+    .testimonialLeftImage {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .testimonialRightImage {
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+    .mitchellImage {
+        height: 500px;
+        width: 400px;
+    }
+
+
+    .icon {
+        font-size: 50px!important;
+        padding: 15px!important;
+    }
+
+    .navigation {
+        visibility: visible;
+    }
+
+    .resumeDownloadContainer {
+        margin-top: 5vh;
+    }
+
+    .sectionHeaderSubTitle {
+        font-size: 2.5rem;
+    }
+
+    .hiSubMessage {
+        font-size: 32px;
+    }
+
+    .hiMessage {
+        font-size: 48px;
+    }
+
+    .resumeDownloadContainer {
+        display: block;
+    }
+}
+@media (min-width:1281px) {
+    .aboutMeRowWrapper {
+        margin-top: 2.5vh;
+    }
+}

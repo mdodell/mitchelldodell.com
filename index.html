@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+    <!--Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <!--Import Font Awesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title>Hi, I'm Mitchell.</title>
+</head>
+<body>
+
+<!--Welcome Section-->
+<div class="sectionWrapper">
+    <div class="welcomeImageWrapper">
+        <div class="socialIcons">
+            <i class="fab icon fa-linkedin fa-4x linkedin-color" aria-hidden="true" onclick="window.open('https://www.linkedin.com/in/mitchell-dodell/')"></i>
+            <i class="fab icon fa-github fa-4x github-color" aria-hidden="true" onclick="window.open('https://github.com/mdodell')"></i>
+            <i class="fa  icon fa-envelope fa-4x primary-orange-color" aria-hidden="true" onclick="window.open('mailto:dodellmitchell@gmail.com')"></i>
+        </div>
+        <div class="navigation">
+                <div><h5 onclick="smoothScroll(document.getElementById('about'))">About Me</h5></div>
+                <div><h5 onclick="smoothScroll(document.getElementById('portfolio'))">My Work</h5></div>
+                <div><h5 onclick="smoothScroll(document.getElementById('testimonials'))">Work with Me</h5></div>
+        </div>
+        <img class="mitchellImage" src="images/Mitchell.png">
+        <div class="hiMessage">HELLO I'M MITCHELL</div>
+        <div class="hiSubMessage">FULL-STACK SOFTWARE ENGINEER</div>
+    </div>
+</div>
+
+<!--About Me Section-->
+<div class="sectionWrapper" id="about">
+    <h3 class="sectionHeaderTitle"><span class="sectionHeaderSpan">About</span></h3>
+    <!--Download my Resume-->
+    <div class="resumeDownloadContainer">
+        <a href="Files/MitchellDodellResume.pdf" target="_blank">
+            Download My Resume
+        </a>
+    </div>
+
+    <!--About Me-->
+    <div class="row center-align aboutMeRowWrapper">
+        <div class="col s12 m12 l4">
+            <h4 class="sectionHeaderSubTitle">ABOUT ME</h4>
+            <div class="subSectionDivider"></div>
+            <div class="aboutMeParagraphWrapper">
+                <h6 class="aboutMeParagraph">
+                    My name is Mitchell Dodell. I am a Sophomore at Brandeis University studying
+                    Computer Science and Business. Born and raised in the 120&deg; landscape that is Arizona, I traded my sunglasses and ever-present
+                    air conditioning for a pair of Timbs and a winter coat in my pursuit of education at Brandeis
+                    University.
+                    <br>
+                    <br>
+                    If I can't be found picking out the best theme for my IDE, you can find me finding exploring the many
+                    restaurants that line
+                    Moody Street in Waltham or playing Overwatch with Brandeis E-Sports team!
+                </h6>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <h4 class="sectionHeaderSubTitle">WHAT I DO</h4>
+            <div class="subSectionDivider"></div>
+            <div class="aboutMeParagraphWrapper">
+                <h6 class="aboutMeParagraph">
+                    I'm a Full Stack Developer with a passion for entrepreneurship. When I am not messing around with CSS
+                    in the Javascript Console or
+                    learning new frameworks, I consult for Israeli start-ups with the TAMID Group.
+                    <br>
+                    <br>
+                    I'm an organizer for <a class="aboutMeLink" href="http://www.codestellation.io/" target="_blank">Codestellation</a>,
+                    Brandeis's annual 24-hour Friendly Hackathon. If I wasn't busy enough,
+                    I am also a Teaching Assistant for Advanced Programming Techniques and a Technology Specialist at Brandeis's Sound
+                    and Image Media Studies.
+                </h6>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <h4 class="sectionHeaderSubTitle">WHAT I'VE DONE</h4>
+            <div class="subSectionDivider"></div>
+            <div class="aboutMeParagraphWrapper">
+                <h6 class="aboutMeParagraph">
+                    You can find some of my previous (and ongoing!) work on my <a class="aboutMeLink" href="https://github.com/mdodell" target="_blank">GitHub</a>.
+                    Please note that some of my projects may be private, due to non-disclosure agreements.
+                    <br>
+                    <br>
+                    I spent my 2018 summer working as a Full-Stack Software Engineer at an amazing DJ event-management start-up called Vibo. I also
+                    worked as a Project Management Intern at Phoenix Children's Hospital for two years, where I had the opportunity to work on the
+                    <a class="aboutMeLink" href="https://healthtechmagazine.net/article/2018/03/phoenix-childrens-hospital-boosts-patient-satisfaction-centrally-managed-ipads" target="_blank">Bedside Entertainment Project</a>, a
+                    project that worked to put a personal iPad in every patient room.
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Portfolio-->
+<div class="sectionWrapper" id="portfolio">
+    <h3 class="sectionHeaderTitle"><span class="sectionHeaderSpan">Portfolio</span></h3>
+    <h5 class="sectionSubtitle">Please note that some of my work may be unavailable due to non-disclosure agreements.</h5>
+    <div class="row center-align">
+        <div class="col s12 m6 l4">
+            <div class="portfolioItemContainer moreWorkComingSoon">
+                <h3>More work coming soon!</h3>
+                <div class="portfolioItemContent">
+                    <h5>I will update this page as I work on future work!</h5>
+                    <h6>Currently, I am working on an Independent Study at Brandeis University to create GroupUs 2.0 using React and Node. I also have some secret projects in the works, which will be posted here in the coming months as they release!</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="portfolioItemContainer">
+               <div class="portfolioItemContent">
+                    <h5>Vibo, TAMID 2018 Fellowship - Full Stack Software Engineer Intern</h5>
+                    <h6>I created ViboTrends, a data aggregation system which allows DJs across the world to view the most popular songs based on time of year, region, and event type.</h6>
+                    <div class="portfolioItemButton" onclick="window.open('https://vibo.io/')">Explore Vibo</div>
+               </div>
+                <img class="portfolioImage" src="images/Vibo_Icon.jpg">
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="portfolioItemContainer">
+                <div class="portfolioItemContent">
+                    <h5>Codestellation - Media Specialist and Web Developer</h5>
+                    <h6>I work with a team of fellow Brandeis University students to organize a yearly hackathon, Codestellation! The Codestellation 2018 website is a great example of my work!</h6>
+                    <div class="portfolioItemButton" onclick="window.open('http://www.codestellation.io')">View the website</div>
+                </div>
+                <img class="portfolioImage" src="images/Codestellation_Icon.jpg">
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="portfolioItemContainer">
+                <div class="portfolioItemContent">
+                    <h5>Brandeis University COSI 155b (Computer Graphics) - Student</h5>
+                    <h6>I worked with a team of students to create 2-player Pong using Three.JS for our final project. I personally set up the initial objects, the sound engine, and the physics behind the game!</h6>
+                    <div class="portfolioItemButton">Play our demo</div>
+                </div>
+                <img class="portfolioImage" src="images/Pong_Icon.png">
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="portfolioItemContainer">
+                <div class="portfolioItemContent">
+                    <h5>GroupUs - Development Lead and Full Stack Developer</h5>
+                    <h6>GroupUs is an online group registration platform for events. A rewrite with new features is currently in the works as part of an independent study at Brandeis University.</h6>
+                    <div class="portfolioItemButton" onclick="window.open('http://groupus.events/section1.php')">View GroupUs</div>
+                </div>
+                <img class="portfolioImage" src="images/GroupUs_Icon.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!--Testimonials-->
+<div class="sectionWrapper" id="testimonials">
+    <h3 class="sectionHeaderTitle"><span class="sectionHeaderSpan">Testimonials</span></h3>
+    <h5 class="sectionSubtitle">See what people who have worked with me have to say!</h5>
+    <div class="testimonialWrapper">
+        <img src="images/RamiDulman.jpeg" class="testimonialImage testimonialLeftImage">
+        <h6 class="testimonialText">
+            Mitchell joined Vibo as a full stack developer intern during the summer of 2018 under my mentorship.
+            With only a little experience with our specific technological stack; in a short amount of time and tons
+            of motivation, Mitchell managed to build an amazing end-to-end product that our customers will soon be using. He taught himself the related technologies needed for
+            the product, and managed to overcome many obstacles in the development process.
+            Mitchell is a highly motivated and exceptional young developer that I am sure will be very beneficial to
+            anyone that will have him work for them. I highly recommend him and wish him the best of luck during his career!
+        </h6>
+    </div>
+    <div class="testimonialWrapper">
+        <h5 class="testimonialName right-align">Rami Dulman</h5>
+        <h6 class="testimonialRole right-align">CTO and VP R&D,
+            <br>
+            Vibo
+        </h6>
+    </div>
+    <hr>
+    <div class="testimonialWrapper">
+        <img src="images/ArthurHarrington.jpg" class="testimonialImage testimonialRightImage">
+        <h6 class="testimonialText">
+            Brilliant — would be the best word I could use to describe the amazing Mitchell Dodell.
+            Besides always being energetic, positive, warm and funny, Mitchell’s mind is continually turning —
+            observing, examining, questioning, and looking for solutions for how things could be designed to work
+            better and more efficiently.  He seems to require little sleep to keep him going at all hours of the day and night.
+            Mitchell is a communicator, and always quickly responds to any queries I make of him.  It has been my great pleasure
+            to know and to with him in multiple capacities over the past 3 or 4 years, and he has provided exceptional leadership
+            and creative technological solutions for our Rotary-sponsored Interact District in Arizona.
+        </h6>
+    </div>
+    <div class="testimonialWrapper">
+        <h5 class="testimonialName left-align">Arthur R. Harrington, Ph.D.</h5>
+        <h6 class="testimonialRole left-align">Rotary Youth Services Chair,
+            <br>
+            Rotary District 5495
+        </h6>
+    </div>
+</div>
+<footer>
+
+</footer>
+
+
+
+</body>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+
+</html>
